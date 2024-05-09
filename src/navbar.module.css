@@ -1,0 +1,59 @@
+.nav {
+  color: white;
+  font-weight: bold;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+ z-index:1000;
+  display: flex;
+  align-items: center;
+ 
+}
+
+.cap {
+  display: flex;
+  flex-direction: row;
+  padding-left: 5%;
+  margin-right: 12%;
+}
+.image {
+  width: 40px;
+  padding: 5px;
+  display: inline;
+  height: 40px;
+}
+.uni {
+  padding-top: 15px;
+  font-size: 20px;
+}
+.li{
+  text-decoration: none;
+  color:white;
+}
+.list li:active{
+  background-color: orange;
+}
+
+
+.list li {
+  display: inline-block;
+  list-style: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 5px;
+
+}
+
+.stick{
+  color: white;
+  font-weight: bold;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  background-color: blue;
+  z-index:1000;
+}
