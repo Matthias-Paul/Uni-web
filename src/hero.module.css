@@ -44,9 +44,63 @@ p{
   .btn:active {
     opacity: 0.8;
   }
-    
-    
 
+
+  
+ /*   media query    */
+
+    
+ @media (max-width:1120px){
+
+    h1{
+        font-size: 45px;
+    }
+    p{
+        font-size: 25px;
+    }
+    .btn {
+        font-weight: 600;
+        border: none;
+        padding: 11px;
+        font-size: 15px;
+        
+      }
+ }
+
+
+ @media (max-width:920px){
+
+    h1{
+        font-size: 35px;
+    }
+    p{
+        font-size: 20px;
+    }
+    .btn {
+        font-weight: 600;
+        border: none;
+        padding: 11px;
+        font-size: 15px;
+        
+      }
+ }
+    
+ @media (max-width:760px){
+
+    h1{
+        font-size: 25px;
+    }
+    p{
+        font-size: 15px;
+    }
+    .btn {
+        font-weight: 600;
+        border: none;
+        padding: 8px;
+        font-size: 12px;
+        
+      }
+ }
 
 
 

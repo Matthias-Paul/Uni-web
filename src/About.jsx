@@ -1,17 +1,49 @@
+import { useState, useRef } from "react";
 import styles from "./about.module.css";
 import aboutimg from "./assets/student2.jpg";
 import abouticon from "./assets/play-button.png";
-
+import vid from "./assets/Welcome to Cambridge!_20240429_081020.mp4";
 
 export default function About() {
+  const [video, setVideo] = useState(false);
+const videoRef = useRef(null)
+  const handleClick = (e) => {
+    e.stopPropagation()
+    setVideo(true);
+   
+  };
+
+  const handlePause = (e)=>{
+    e.stopPropagation()
+      }
+      const handleVid = ()=>{
+    setVideo(false)
+          }
+
+ 
+
   return (
     <>
-      <div id="about" className={styles.about}>
+      <div id="about" onClick={handleVid}  className={styles.about}>
         <div className={styles.aboutleft}>
           <img src={aboutimg} />
           <div className={styles.iconimg}>
-            {" "}
-            <img src={abouticon} />{" "}
+            <div>
+              {!video ? (
+                <img src={abouticon} onClick={handleClick} />
+              ) : (
+                <video
+                ref={videoRef}
+                  className={styles.vid}
+                  onClick={handlePause}
+                  controls
+                  autoPlay
+                >
+                  {" "}
+                  <source src={vid} type="video/mp4" />{" "}
+                </video>
+              )}
+            </div>
           </div>
         </div>
 
@@ -38,7 +70,6 @@ export default function About() {
           </p>
         </div>
       </div>
-      
     </>
   );
 }

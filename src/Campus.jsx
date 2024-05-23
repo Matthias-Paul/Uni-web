@@ -27,8 +27,8 @@ export default function Campus() {
   let tx =0;
   
   const slideForward = () =>{
-  if (tx > -230){
-  tx -=33
+  if (tx > -400){
+  tx -=52
   }
   slider.current.style.transform= `translateX(${tx}%)`
    }
@@ -36,7 +36,7 @@ export default function Campus() {
   
    const slideBackward = () =>{
     if (tx < 0){
-      tx +=33
+      tx +=52
       }
       slider.current.style.transform= `translateX(${tx}%)`
        }

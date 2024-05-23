@@ -22,6 +22,7 @@ width:100%;
     justify-content: center;
     align-items:center;
     width:100%;
+    color:orange;
     font-weight: bold;
     font-size: 18px;
 
@@ -83,11 +84,44 @@ cursor:pointer;
             margin-top:4px;
             margin-left:-9px
         }
-        
+       
+      
+  
+          /*   media query    */
 
 
        
+        @media (max-width:760px){
 
-
-
-
+            .program{
+                grid-template-columns: 300px;
+               margin-bottom: 20px;
+            }
+            .icon1{
+                top:280px;
+                left:115px;
+                
+                  
+                }
+            .icon2{
+                top:540px;
+                left:122px;
+                
+                  
+                }
+                .icon3{
+                    top:950px;
+                    left:115px;
+                    }
+        
+                    .text2{
+                        padding-top: 80px;
+                        font-size: 16px;
+                    }
+                    .text1{
+                      font-size: 25px;
+                    }
+        
+                }
+           
+              

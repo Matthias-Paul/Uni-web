@@ -58,17 +58,39 @@ export default function Contact() {
          <form onSubmit={onSubmit}>
          <div className={styles.label}>Your name</div>
          <input  className={styles.input} type="text" name="name" placeholder="Enter your name" required />
-         <div className={styles.label}>Phone Number</div>
-         <input className={styles.input} type="tel" name="phone" placeholder="Enter your mobile number" required/>
+         <div className={styles.label}>Email Address</div>
+         <input className={styles.input} type="email" name="email address" placeholder="Enter your email address" required/>
          <div className={styles.label}>Write your messages here</div>
          <textarea className={styles.text} name="message" rows="6" placeholder="Enter your message" required/>
        <button type="submit" className={styles.btn}>Send</button>
          </form>
          <span>{result}</span>
+     
 
           </div>
+      
         </div>
+        <hr  className={styles.line}></hr>
       </div>
+      
+     
+
+<div className={styles.footer}>
+
+<p  className={styles.right}>&#169; 2024 Paul University. All rights reserved.</p>
+      <ul>
+
+        <li>
+          Terms of Services
+        </li>
+        <li>
+        Privacy Policy
+        </li>
+      </ul>
+
+</div>
+      
+  
     </>
   );
 }

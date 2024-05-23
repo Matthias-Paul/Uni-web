@@ -25,13 +25,13 @@ h4{
 .slider{
   display:flex;
 
-  width:200%;
+  width:100%;
   transition:0.5s;
 
 }
 
 .gallery img{
-    width:30%;
+    width:40%;
     height:380px;
     border-radius: 10px;
     margin-left: 30px;
@@ -63,3 +63,32 @@ h4{
   cursor: pointer;  
   z-index:1000;
 } 
+
+
+
+/*          ------media query  -------*/
+@media (max-width:760px){
+  .gallery{
+    margin-right:1%;
+    margin-left: 7%;
+ margin-top: -230px;;
+  display:grid;
+  justify-content: center;
+    row-gap: 20px;
+    column-gap:50px;
+   }
+  .gallery img{
+
+object-fit: cover;
+margin-top:230px;
+
+}
+.slider{
+  width:100%;
+}
+
+
+
+
+
+}

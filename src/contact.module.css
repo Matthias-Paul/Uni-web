@@ -97,8 +97,93 @@ margin-left: 8px;
 .btn:active{
     opacity:0.8;
 }
+.footer{
+    display:flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    margin-top:45px;
+    height: 20px;
+
+}
+.footer p{
+    margin-top: 10px;
+   
+}
+.footer ul li{
+  list-style: none;
+    display: inline;
+    margin-left: 20px;
+    font-size:19px;
+
+}
+.line{
+    margin-bottom: -20px;
+  }
+  right{
+    margin-bottom: -40px;
+  }
+/*  ---------------media query  ----------*/
+
+@media (max-width:760px){
+.contact{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+ 
+  
+}
+.contactCol h3{
+  
+    font-size: 18px;
+    margin-left: 17px;
+   
+}
+.contactCol li{
+    font-size: 16px;
+
+}
+.input{
+    width:170%;
+    margin-left: -65px;
+}
+.text{
+    width:170%;
+    margin-left: -65px;
+}
+.btn{
+    width:173%;
+    border-radius: 10px;
+    margin-left: -65px;
+}
+.label{
+    margin-left: -65px;
+}
+.footer{
+    display:block;
+    height: 20px;
+}
+.footer ul li{
+      margin-left: 5px;
+      font-size:13px;
+   
+  }
+  .line{
+    margin-bottom: -70px;
+  }
+  .right{
+    margin-bottom: -45px;
+  }
+  .footer ul {
+    padding-bottom: -40px;
+  }
 
 
+
+
+
+
+}
 
 
 
