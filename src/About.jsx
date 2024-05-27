@@ -6,34 +6,35 @@ import vid from "./assets/Welcome to Cambridge!_20240429_081020.mp4";
 
 export default function About() {
   const [video, setVideo] = useState(false);
-const videoRef = useRef(null)
+  const videoRef = useRef(null);
   const handleClick = (e) => {
-    e.stopPropagation()
+    e.stopPropagation();
     setVideo(true);
-   
   };
 
-  const handlePause = (e)=>{
-    e.stopPropagation()
-      }
-      const handleVid = ()=>{
-    setVideo(false)
-          }
-
- 
+  const handlePause = (e) => {
+    e.stopPropagation();
+  };
+  const handleVid = () => {
+    setVideo(false);
+  };
 
   return (
     <>
-      <div id="about" onClick={handleVid}  className={styles.about}>
-        <div className={styles.aboutleft}>
-          <img src={aboutimg} />
-          <div className={styles.iconimg}>
-            <div>
+      <div id="about" onClick={handleVid} className={styles.about}>
+        <div className={styles.aboutleft} >
+          <img  src={aboutimg} />
+          <div className={styles.iconimg}   >
+            <div className={styles.visual}>
               {!video ? (
-                <img src={abouticon} onClick={handleClick} />
+                <img
+                  className={styles.abouticon}
+                  src={abouticon}
+                  onClick={handleClick}
+                />
               ) : (
                 <video
-                ref={videoRef}
+                  ref={videoRef}
                   className={styles.vid}
                   onClick={handlePause}
                   controls

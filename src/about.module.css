@@ -5,13 +5,13 @@
   position: relative;
   width: 45%;
 }
-.videoWrapper{
-
-  display:inline-block;
+.videoWrapper {
+  display: inline-block;
 }
-.vid{
-  width:300%;
-  margin-left: -90px;
+.vid {
+  width: 115%;
+  margin-left: 10px;
+  margin-top: 25px;
 }
 .aboutleft img {
   width: 400px;
@@ -21,18 +21,17 @@
   margin-top: 70px;
   margin-left: 170px;
   border-radius: 20px;
-
 }
 .iconimg {
   position: absolute;
-  top: 70px;
-  left: 140px;
+  top: 80px;
+  left: 10px;
 
+  cursor: pointer;
 }
-.iconimg img {
+.abouticon {
   height: 130px;
   width: 130px;
-  cursor: pointer;
 }
 .aboutright {
   float: right;
@@ -55,48 +54,39 @@
 
 /*   -------- media query -------- */
 
-
-
 @media (max-width: 1120px) {
   .aboutright h3 {
     padding-bottom: 20px;
     color: blue;
-    font-size:20px
+    font-size: 20px;
   }
-  
+
   .aboutright h2 {
     color: orange;
-    font-size:22px
+    font-size: 22px;
   }
   .aboutright p {
     font-size: 17px;
     color: rgb(90, 72, 107);
   }
   .aboutleft img {
-   width:350px;
+    width: 350px;
     margin-top: 70px;
     margin-left: 120px;
-    
   }
-  .vid{
-    width:500px;
+  .vid {
+    width: 500px;
     margin-left: -90px;
-    margin-top:100px;
+    margin-top: 100px;
   }
   .iconimg img {
     height: 100px;
     width: 100px;
   }
   .iconimg {
-
     left: 120px;
-    
   }
-
-
-
 }
-
 
 @media (max-width: 920px) {
   .about {
@@ -108,7 +98,6 @@
     margin-bottom: -160px;
     margin-left: 10px;
     border-radius: 20px;
-    
   }
   .about {
     display: block;
@@ -139,51 +128,41 @@
     color: rgb(90, 72, 107);
   }
 
-  .iconimg img {
+  .abouticon {
     height: 100px;
     width: 100px;
   }
   .iconimg {
-    top:80px;
+    top: 80px;
     left: 140px;
-    
   }
-  .vid{
-    width:500px;
+  .vid {
+    width: 500px;
     margin-left: -150px;
   }
 }
 
-
-
-
 @media (max-width: 760px) {
-  .about {
-    display: block;
-  }
   .aboutleft img {
     width: 320px;
+    position: absolute;
     object-fit: cover;
-   
-    
     margin-left: 10px;
-    border-radius: 20px;
-    
+    margin-top: -100px;
   }
-  .vid{
-    width:370px;
-   
+  .vid {
+    width: 320px;
+
     margin-left: -100px;
-    margin-top:140px;
-    
+    margin-top: -20px;
   }
   .about {
     display: block;
-    padding-top: 280px;
+    padding-top: 510px;
     padding-left: 20px;
   }
 
-  .iconimg img {
+  .abouticon {
     height: 70px;
     width: 70px;
   }
@@ -191,7 +170,6 @@
   .aboutright {
     width: 100%;
     text-align: center;
-  
   }
   .aboutright h3 {
     padding-bottom: 20px;
@@ -209,10 +187,10 @@
   .iconimg img {
     height: 80px;
     width: 80px;
+    margin-top: -125px;
   }
   .iconimg {
-    top:70px;
+    top: 70px;
     left: 110px;
-    
   }
 }
